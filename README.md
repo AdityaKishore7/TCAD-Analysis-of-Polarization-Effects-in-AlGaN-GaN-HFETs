@@ -18,7 +18,7 @@ The simulated device is an RF GaN HFET based on a structure published by Kikkawa
 * **Gate Length ($L_g$):** 0.8 µm
 
 
-![Untitled design](pictures/Untitled%20design.png)
+![Untitled design](Pictures/Untitled%20design.png)
 
 
 ## Physics and Models Implemented
@@ -60,7 +60,7 @@ The project is managed via a Sentaurus Workbench project, which automates the fo
 The simulation generates standard DC characteristic curves, allowing for the extraction of key metrics like threshold voltage, transconductance ($g_m$), and on-state current.
 
 
-![output_graph_2](pictures/output_graph_2.png)
+![output_graph_2](Pictures/output_graph_2.png)
 
-![output_graph_1](pictures/output_graph_1.png)
+![output_graph_1](Pictures/output_graph_1.png)
 
