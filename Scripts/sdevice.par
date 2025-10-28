@@ -1,0 +1,26 @@
+# Define lattice parameters for all materials outside of any material or region blocks
+# Use ParameterInheritance= Flatten in main Math section so these parameters are
+# inherited by all materials and regions
+LatticeParameters {
+	X = (1, 0, 0)
+	Y = (0, 0,-1)
+}
+
+# Also define Piezoelectric polarization Formula=2 outside of any material blocks so that
+# it is used for all regions in the simulation
+Piezoelectric_Polarization {
+	Formula= 2
+}
+
+
+
+Region= "GaN_buffer" {
+
+	* Lower value for constant mobility in the buffer layer
+	ConstantMobility:
+	{ * mu_const = mumax (T/T0)^(-Exponent)
+		mumax	= 900 ,	150		# [cm2/(Vs)] 
+		Exponent	= 1 ,	2.1			# [1]
+	}
+}
+
